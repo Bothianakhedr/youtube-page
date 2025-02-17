@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>youtube</title>
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <!-- & #######top  Navbar -->
-    <nav class="flex py-1 items-center  justify-between shadow-md">
+    <!-- & ####### top  Navbar -->
+    <nav class="flex py-1 items-center justify-between pt-1">
       <div class="youtub-icon flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          stroke-width="1"
           stroke="currentColor"
-          class="size-6 hidden lg:block w-15  "
+          class="size-5 hidden lg:block w-10 h-10 ml-4 p-2 hover:bg-[#f4f4f4] rounded-full"
         >
           <path
             stroke-linecap="round"
@@ -29,12 +29,15 @@
           alt="youtube logo"
         />
       </div>
-      <div class="search hidden lg:flex items-center gap-6">
-        <div
-          class="w-[500px] h-12 rounded-3xl px-4 items-center flex justify-between border border-gray-300"
+       <div class="search hidden lg:flex items-center gap-4"> 
+        <div  class="w-[650px] h-10 rounded-3xl ps-4 items-center flex justify-between border border-gray-300"
         >
-          <input type="text" placeholder="Search..." class="border-0 focus:border-0 focus:outline-0" />
-          <svg
+          <input
+            type="text"
+            placeholder="Search..."
+            class="border-0 focus:border-0 focus:outline-0"
+          />
+          <button class="bg-[#F4F4F4] p-[9px] w-13 border-s-1 border-gray-300 flex items-center justify-center   rounded-r-full"><svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -47,10 +50,10 @@
               stroke-linejoin="round"
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
-          </svg>
+          </svg></button>
         </div>
         <div
-          class="search-by-voice bg-gray-200 hover:bg-gray-300 transition-colors w-8 h-8 rounded-full flex justify-center items-center"
+          class="search-by-voice bg-[#F4F4F4] hover:bg-[#eee] transition-colors w-9 h-9 rounded-full flex justify-center items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +70,31 @@
             />
           </svg>
         </div>
-      </div>
+      </div> 
 
-      <div class="account hidden lg:flex pe-4  items-center gap-5">
-        <div  class="add-post py-2 px-5 flex justify-center items-cent shadow-sm text-md font-medium gap-2 bg-gray-200 rounded-full"
+   
+      
+      <div class="account hidden lg:flex pe-4 items-center gap-5">
+        <div
+          class="add-post py-2 px-5 flex justify-center items-center shadow-sm transition-colors font-medium gap-2 hover:bg-[#eee] bg-[#F4F4F4] rounded-full"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+          create
+        </div>
+        <div class="bell flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -83,31 +106,15 @@
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-          create
-        </div>
-        <div class="bell flex items-center ">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6 "
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
               d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
             />
           </svg>
         </div>
-        <div class="profile flex justify-center items-center w-7 h-7 rounded-full text-white bg-red-800">
+        <div
+          class="profile flex justify-center items-center w-7 h-7 rounded-full text-white bg-red-800"
+        >
           B
         </div>
-
       </div>
       <div class="search-icon pr-4 lg:hidden">
         <svg
@@ -127,370 +134,549 @@
       </div>
     </nav>
     <!-- &bottom navbar -->
-    <nav class="px-1 py-4 shadow-sm">
-      <ul class="flex gap-5">
-        <li class="flex justify-center items-center">
-          <a class="bg-black rounded-md py-1 px-4  shadow-sm text-sm text-white " href="#"
-            >All</a
+    <div class="  flex">
+      <aside class=" hidden  lg:block   text-center mt-5">
+        <div class="home mb-5 hover:bg-[#F4F4F4] transition-colors  py-2  rounded-lg">
+          <svg
+            class="w-5 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
           >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium bg-slate-200 text-sm hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Css
-          </a>
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >podcast</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Music</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Algorithms</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Live</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Mixes</a
-          >
-        </li>
-
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200  shadow-sm hover:bg-slate-300 transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Words</a
-          >
-        </li>
-
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Kitchen</a
-          >
-        </li>
-
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >information</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >c++</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >java</a
-          >
-        </li>
-
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >Games</a
-          >
-        </li>
-        <li class="flex justify-center items-center">
-          <a
-            class="font-medium text-sm bg-slate-200 hover:bg-slate-300  shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
-            href="#"
-            >learning</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- & header -->
-    <header>
-      <div class="lg:container mx-auto">
-        <div
-        class="vedios md:grid md:grid-cols-2 md:gap-7 lg:grid lg:grid-cols-3 lg:gap-6"
-      >
-        <div class="vedio md:mt-6 overflow-hidden rounded-xl">
-          <figure>
-            <img
-              src="./img/hq720 (1).jpg"
-              alt="react hook  "
-              class="rounded-xl"
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
             />
-            <figcaption class="flex items-center gap-3 pt-2">
-              <img
-                src="./img/channels4_profile (1).jpg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a
-                href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
-              >
-                <div class="description">
-                  <h2 class="flex justify-between items-center">
-                    React Level 1 - Part 1 :ReactJS Hooks 2023 [Arabic]
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>kimz codes-24k views</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
+          </svg>
+          <span class="text-[11px]">Home</span>
         </div>
-        <div class="vedio mt-6 overflow-hidden rounded-xl">
-          <figure class="">
-            <img
-              src="./img/hq720 (5).jpg"
-              alt="frontend  "
-              class="rounded-xl"
+        <div class="shorts mb-5 hover:bg-[#F4F4F4] transition-colors py-2 rounded-lg">
+          <svg
+            class="w-5 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
             />
-            <figcaption class="flex items-center gap-4 pt-2">
-              <img
-                src="./img/gOviR4aRKwn5cWMikNsoxfVep3hlzv3uwrOvZ_yQnmM9P_-s9_uZT-4XrmXd.jpeg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a
-                href="https://www.youtube.com/watch?v=ueAxdWK7vl8&list=PLHlM6MCUgX6NqrQG52dTUIy1Lhqj75Y5O"
-              >
-                <div class="description">
-                  <h2 class="flex justify-between gap-24 items-center">
-                    React JS 1- Intro & Course
-
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>mo tahawy . playlist</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
+          </svg>
+          <span class="text-[11px]">Shorts</span>
         </div>
-        <div class="vedio mt-6 overflow-hidden rounded-xl">
-          <figure>
-            <img
-              src="./img/hq720 (3).jpg"
-              alt="ramadan   "
-              class="rounded-xl"
+        <div class="subscriptions mb-5 hover:bg-[#F4F4F4] transition-colors py-2 rounded-lg">
+          <svg
+            class="w-5 mx-auto "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 20.25h12m-5.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z"
             />
-            <figcaption class="flex items-center gap-3 pt-2">
-              <img
-                src="./img/9wWwue3IsHkJ_nQpvPS5D5f4vJNkyVoxC4B77qpWtZXE9zi3ykWcO2hFQDOP.jpeg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a href="https://www.youtube.com/watch?v=4E-HcFEgDFg">
-                <div class="description">
-                  <h2 class="flex justify-between items-center">
-                    مشترياتي لتجديد النفسية والمطبخ قبل رمضان🥰🌙
+          </svg>
 
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>shimaa fouda -24k views</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
+          <span class="text-[11px] ms-1">subscriptions</span>
         </div>
-        <div class="vedio mt-6 overflow-hidden rounded-xl">
-          <figure>
-            <img src="./img/hq720 (9).jpg" alt="books  " class="rounded-xl" />
-            <figcaption class="flex items-center gap-3 pt-2">
-              <img
-                src="./img/Rs13V1xb67JJ4R642NOi58lH6qsQL16SwyDgWKYowxMKB0hKhwtS7Uu_oKWj.jpeg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a href="https://www.youtube.com/watch?v=pQZIBllJGgQ">
-                <div class="description">
-                  <h2 class="flex justify-between gap-16 items-center">
-                    أفضل ٥ كتب قريتها هتغير حياتك فى ٢٠٢٥!
-
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>ahmed abdelhady 25k views</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="account hover:bg-[#F4F4F4] transition-colors py-2 rounded-lg">
+          <div
+            class="w-7 h-7 mx-auto rounded-full bg-red-800 text-white flex items-center justify-center"
+          >
+            B
+          </div>
+          <span class="text-[11px]">you</span>
         </div>
+      </aside>
+     <div class="header">
+      <!-- & nav header -->
+      <nav class="px-1 py-4 w-fit     mx-auto   ">
+        <ul class="flex gap-2">
+          <li class="flex justify-center items-center">
+            <a
+              class="bg-black rounded-md py-1 px-2.5 shadow-sm text-sm text-white"
+              href="#"
+              >All</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium bg-[#f4f4f4] text-sm hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Css
+            </a>
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >podcast</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Music</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Algorithms</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Live</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Mixes</a
+            >
+          </li>
 
-        <div class="vedio mt-6 overflow-hidden rounded-xl">
-          <figure>
-            <img
-              src="./img/hq720 (13).jpg"
-              alt="love yourself first"
-              class="rounded-xl"
-            />
-            <figcaption class="flex items-center gap-3 pt-2">
-              <img
-                src="./img/channels4_profile (2).jpg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a
-                href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
-              >
-                <div class="description">
-                  <h2 class="flex justify-between items-center">
-                    رتب مشاعرك وارفع وعيك وتخلص من كرهك لذاتك والاخرين بهذه
-                    الممارسات
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] shadow-sm hover:bg-[#eee] transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Words</a
+            >
+          </li>
 
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>1.2M views</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Kitchen</a
+            >
+          </li>
+
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >information</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >c++</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >java</a
+            >
+          </li>
+
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >Games</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >learning</a
+            >
+          </li>
+          <li class="flex justify-center items-center">
+            <a
+              class="font-medium text-sm bg-[#F4F4F4] hover:bg-[#eee] shadow-sm transition-colors duration-200 py-1 px-4 rounded-md"
+              href="#"
+              >planning</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--& main header -->
+      <header>
+        <div class="container w-fit  pl-9 ms-auto pr-5">
+          <div
+            class="vedios md:grid md:grid-cols-2 md:gap-7 lg:grid lg:grid-cols-3 lg:gap-3 2xl:grid 2xl:grid-cols-4"
+          >
+            <div class="vedio md:mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="/src/img/hq720 (1).jpg"
+                  alt="react hook  "
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="/src/img/channels4_profile (1).jpg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a
+                    href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
+                  >
+                    <div class="description">
+                      <h2 class="flex justify-between items-center ">
+                        React Level 1 - Part 1 :ReactJS Hooks 2023 [Arabic]
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors ">kimz codes-24k views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure class="">
+                <img
+                  src="src/img/hq720 (5).jpg"
+                  alt="frontend  "
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-4 pt-2">
+                  <img
+                    src="src/img/gOviR4aRKwn5cWMikNsoxfVep3hlzv3uwrOvZ_yQnmM9P_-s9_uZT-4XrmXd.jpeg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a
+                    href="https://www.youtube.com/watch?v=ueAxdWK7vl8&list=PLHlM6MCUgX6NqrQG52dTUIy1Lhqj75Y5O"
+                  >
+                    <div class="description">
+                      <h2 class="flex justify-between gap-32 items-center">
+                        React JS 1- Intro & Course
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">mo tahawy . playlist</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (3).jpg"
+                  alt="ramadan   "
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/9wWwue3IsHkJ_nQpvPS5D5f4vJNkyVoxC4B77qpWtZXE9zi3ykWcO2hFQDOP.jpeg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a href="https://www.youtube.com/watch?v=4E-HcFEgDFg">
+                    <div class="description">
+                      <h2 class="flex justify-between items-center">
+                        مشترياتي لتجديد النفسية والمطبخ قبل رمضان🥰🌙
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">shimaa fouda -24k views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (9).jpg"
+                  alt="books  "
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/Rs13V1xb67JJ4R642NOi58lH6qsQL16SwyDgWKYowxMKB0hKhwtS7Uu_oKWj.jpeg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a href="https://www.youtube.com/watch?v=pQZIBllJGgQ">
+                    <div class="description">
+                      <h2 class="flex justify-between gap-16 items-center">
+                        أفضل ٥ كتب قريتها هتغير حياتك فى ٢٠٢٥!
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">ahmed abdelhady 25k views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+  
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (13).jpg"
+                  alt="love yourself first"
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/channels4_profile (2).jpg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a
+                    href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
+                  >
+                    <div class="description">
+                      <h2 class="flex justify-between items-center">
+                        رتب مشاعرك وارفع وعيك وتخلص من كرهك لذاتك والاخرين بهذه
+                        الممارسات
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">1.2M views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (13).jpg"
+                  alt="love yourself first"
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/channels4_profile (2).jpg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a
+                    href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
+                  >
+                    <div class="description">
+                      <h2 class="flex justify-between items-center">
+                        رتب مشاعرك وارفع وعيك وتخلص من كرهك لذاتك والاخرين بهذه
+                        الممارسات
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">1.2M views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (13).jpg"
+                  alt="love yourself first"
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/channels4_profile (2).jpg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a
+                    href="https://www.youtube.com/watch?v=RgtTrM_sflo&list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59"
+                  >
+                    <div class="description">
+                      <h2 class="flex justify-between items-center">
+                        رتب مشاعرك وارفع وعيك وتخلص من كرهك لذاتك والاخرين بهذه
+                        الممارسات
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">1.2M views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="vedio mb-15 mt-6 overflow-hidden rounded-lg">
+              <figure>
+                <img
+                  src="src/img/hq720 (4).jpg"
+                  alt="success  "
+                  class="rounded-lg"
+                />
+                <figcaption class="flex items-center gap-3 pt-2">
+                  <img
+                    src="src/img/q3PilZ2e7enLTBdKbMmMoBxyuwtfVull13jiFuY3RKky0f4iw-VrAjOEh3oj.jpeg"
+                    class="w-10 h-10 rounded-full"
+                    alt=""
+                  />
+                  <!-- link playlist -->
+                  <a href="https://www.youtube.com/watch?v=ItIjFNIj5ng">
+                    <div class="description">
+                      <h2 class="flex justify-between items-center">
+                        قصة نجاح - بدون شهادة - استطاع العمل في شركة كبرى في كندا
+  
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                            />
+                          </svg>
+                        </span>
+                      </h2>
+                      <p class="text-[#606060] hover:text-black transition-colors text-sm">12km views</p>
+                    </div>
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="vedio mb-15 mt-6 overflow-hidden rounded-xl">
-          <figure>
-            <img src="./img/hq720 (4).jpg" alt="success  " class="rounded-xl" />
-            <figcaption class="flex items-center gap-3 pt-2">
-              <img
-                src="./img/q3PilZ2e7enLTBdKbMmMoBxyuwtfVull13jiFuY3RKky0f4iw-VrAjOEh3oj.jpeg"
-                class="w-10 h-10 rounded-full"
-                alt=""
-              />
-              <!-- link playlist -->
-              <a href="https://www.youtube.com/watch?v=ItIjFNIj5ng">
-                <div class="description">
-                  <h2 class="flex justify-between items-center">
-                    قصة نجاح - بدون شهادة - استطاع العمل في شركة كبرى في كندا
+      </header>
+     </div>
+    </div>
 
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                        />
-                      </svg>
-                    </span>
-                  </h2>
-                  <p>12km views</p>
-                </div>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      </div>
-    </header>
+
 
     <!-- &footer -->
     <footer
